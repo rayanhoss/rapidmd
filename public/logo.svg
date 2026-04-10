@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" fill="none">
+  <!-- Transparent background - no fill -->
+
+  <!-- The swoosh / speed line above RAPID -->
+  <path d="M 155 145 Q 280 100 420 125" stroke="white" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <!-- RAPID - bold condensed italic letterforms -->
+  <!-- R -->
+  <text x="62" y="270"
+    font-family="'Arial Black', 'Arial', sans-serif"
+    font-size="148"
+    font-weight="900"
+    font-style="italic"
+    fill="white"
+    letter-spacing="-2">RAPID</text>
+
+  <!-- CONSTRUCTION -->
+  <text x="62" y="330"
+    font-family="'Arial', sans-serif"
+    font-size="48"
+    font-weight="700"
+    font-style="normal"
+    fill="white"
+    letter-spacing="4">CONSTRUCTION</text>
+
+  <!-- & RENOVATION LLC -->
+  <text x="62" y="382"
+    font-family="'Arial', sans-serif"
+    font-size="48"
+    font-weight="700"
+    font-style="normal"
+    fill="white"
+    letter-spacing="4">&amp; RENOVATION LLC</text>
+</svg>

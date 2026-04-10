@@ -65,20 +65,20 @@ export default function HomePage() {
 
           {/* Floating animated dots */}
           {[
-            { cx: "15%", cy: "25%", r: 1.5, dur: "4s" },
-            { cx: "75%", cy: "15%", r: 1,   dur: "5s" },
-            { cx: "85%", cy: "65%", r: 2,   dur: "6s" },
-            { cx: "25%", cy: "75%", r: 1.5, dur: "4.5s" },
-            { cx: "55%", cy: "40%", r: 1,   dur: "3.5s" },
-          ].map((d, i) => (
-            <motion.div
-              key={i}
-              className="absolute rounded-full bg-white"
-              style={{ left: d.cx, top: d.cy, width: `${parseFloat(d.r)*2}px`, height: `${parseFloat(d.r)*2}px`, opacity: 0.15 }}
-              animate={{ opacity: [0.08, 0.25, 0.08], scale: [1, 1.5, 1] }}
-              transition={{ duration: parseFloat(d.dur), repeat: Infinity, delay: i * 0.8 }}
-            />
-          ))}
+  { cx: "15%", cy: "25%", r: 1.5, dur: "4s" },
+  { cx: "75%", cy: "15%", r: 1,   dur: "5s" },
+  { cx: "85%", cy: "65%", r: 2,   dur: "6s" },
+  { cx: "25%", cy: "75%", r: 1.5, dur: "4.5s" },
+  { cx: "55%", cy: "40%", r: 1,   dur: "3.5s" },
+].map((d, i) => (
+  <motion.div
+    key={i}
+    className="absolute rounded-full bg-white"
+    style={{ left: d.cx, top: d.cy, width: `${d.r * 2}px`, height: `${d.r * 2}px`, opacity: 0.15 }}
+    animate={{ opacity: [0.08, 0.25, 0.08], scale: [1, 1.5, 1] }}
+    transition={{ duration: Number(d.dur.replace("s", "")), repeat: Infinity, delay: i * 0.8 }}
+  />
+))}
 
           {/* Large faint text watermark */}
           <div className="absolute right-0 bottom-0 font-display text-[22vw] text-white/[0.025] leading-none select-none pointer-events-none tracking-tighter">
